@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     let lista_personagens = []
 
-    fetch('../source/scripts/one_piece_characters.json')
+    fetch('../jsons/one_piece_characters.json')
         .then(response => response.json())
             .then(data => {
                 for(let i = 0; i < 1505; i++){
