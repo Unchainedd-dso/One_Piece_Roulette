@@ -4,7 +4,7 @@
 @corBotao: #fab226;
 @corTitulo:rgb(236, 38, 34);
 @corBordaMensagem: #a95326;
-@corNomePersonagem: #010003;
+@corNomePersonagem: magenta;
 
 @breakPointMobile: 767px;
 @breakPointTablet: 1023px;
@@ -77,14 +77,14 @@ button{
     }
 }
 
-@media screen and (max-width:@breakPointTablet){
+@media screen and (max-width: @breakPointTablet){
     body{
         background-size: auto;
         background-position: 33% 43%;
     }
 }
 
-@media screen and (max-width:@breakPointMobile){
+@media screen and (max-width: @breakPointMobile){
     
     body{
         background-size: 400%;
@@ -92,7 +92,7 @@ button{
     }
     
     main{
-        width: 80% ;
+        width: 80%;
     }
 
     h1{
@@ -100,7 +100,10 @@ button{
         margin-top: 8vh;
     }
 
-    span{
-        color: magenta;
+    .mensagem-ganhador{
+        margin-top: -12vh;
+        h3{
+            padding: 3vh 3vh 0;
+        } 
     }
 }
