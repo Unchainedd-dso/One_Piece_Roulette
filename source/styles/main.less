@@ -1,0 +1,102 @@
+@fontePrincipal: Roboto, sans-serif;
+@corTexto: white;
+@corBordaBotao:#0d55a5;
+@corBotao: #fab226;
+@corTitulo:rgb(236, 38, 34);
+@corBordaMensagem: #a95326;
+@corNomePersonagem: #010003;
+
+@breakPointMobile: 767px;
+@breakPointTablet: 1023px;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: @fontePrincipal;
+}
+
+@font-face {
+    font-family: one-piece-font;
+    src: url('../font/one-piece-font.ttf');
+}
+
+
+body{
+    background-image: url('../images/merry_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: one-piece-font;
+    font-size: 3em;
+    color: @corTitulo;
+    margin-top: 8vh;
+
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+button{
+    padding: 16px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10vh;
+    background-color: @corBotao;
+    border: 3px solid @corBordaBotao;
+    color: @corTexto;
+    font-family: @fontePrincipal;
+}
+
+.mensagem-ganhador{
+    display: flex;
+    justify-content: center;
+    margin-top: -8vh;
+    h3{
+        margin-top: 15vh;
+        padding: 3vh;
+        max-width: 720px;
+        font-size: 1.2em;
+        border: 5px solid @corBordaMensagem;
+        border-style: dashed;
+        display: none;
+        position: absolute;
+        span{
+            font-size: 1.6em;
+            display: block;
+            color: @corNomePersonagem;
+        }
+    }
+}
+
+@media screen and (max-width:@breakPointTablet){
+    body{
+        background-size: auto;
+        background-position: 33% 43%;
+    }
+}
+
+@media screen and (max-width:@breakPointMobile){
+    
+    body{
+        background-size: 400%;
+        background-position: 32% 4%;
+    }
+    
+    main{
+        width: 80% ;
+    }
+
+    h1{
+        font-size: 2.5em;
+        margin-top: 8vh;
+    }
+}
