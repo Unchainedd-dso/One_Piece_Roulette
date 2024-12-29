@@ -79,7 +79,7 @@ module.exports = function(grunt){
                         },
                         {
                             match: 'ENDERECO_DO_JS',
-                            replacement: './scripts/main.min.js',
+                            replacement: './scripts/main.js',
                         }
                     ]
                 },
@@ -140,7 +140,7 @@ module.exports = function(grunt){
                         flatten: true,
                         src: ['./source/scripts/*.js'],
                         dest:'./dist/scripts/',
-                        ext: '.min.js' //extensão do arquivo gerado 
+                        ext: '.js' //extensão do arquivo gerado 
                     }  
                 ]
             }
